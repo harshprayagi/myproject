@@ -1,0 +1,41 @@
+Commands for adding branch & pushing in new project in git
+
+1. login into your github account
+2. create new repository
+3. create the local repository
+4. run below commands:
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+
+    example:
+    git config --global user.email "harshprayagi@gmail.com"
+    git config --global user.name "harshprayagi"
+5. change to the directory where files need to be pushed/commit
+6. run
+    git init
+        to initialize the git repository as empty
+7. run "ls" command to check files list
+8. run "git branch" to check in which branch we are currently working.
+   by default "master" branch is seen 
+9. if needed new branch create one by running below command:
+    git branch <branch_name>
+
+    example:
+
+    git branch git_demo
+
+10. run "git branch" to see the list of branches available:
+    
+    PS D:\myproject> git branch
+    git_demo
+    * master    
+
+    * shows the current branch
+11. use "git checkout" command to change the current branch to other branch:
+    git checkout <branch_name>
+    example:
+    git checkout git_demo
+12. use command "git status" to check the current state of the repo, like which files are commited which are not.
+13. run below command to attach to remote repo where need to push/pull the commit:
+    git remote add origin https://github.com/harshprayagi/myproject.git
+
